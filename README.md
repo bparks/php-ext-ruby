@@ -1,16 +1,18 @@
 Ruby on PHP (PHP extension)
 =============
 
-Ruby を PHP 上で動かすための PHP 拡張。
+PHP extension for running Ruby in PHP. Eventually, this will be able to run
+full rails apps. That's the goal, anyway.
 
 
 Introduction
 -----------
-現在は、文字列として ruby のコードを受け取って実行する ruby_eval 関数しかありません。
+Currently, there is only ruby_eval function to be executed by receiving a code of ruby as a string.
 
-Scientific Linux release 6 (x86_64) 上で開発しています。
+Originally developed by github user do_aki on Scientific Linux release 6 (x86_64). Forked
+by bparks and continued on ubuntu (64-bit).
 
-ruby 1.9 以上が必要となるハズです。
+ruby 1.9 or newer required (according to original README).
 
 ###sample code
 
@@ -36,7 +38,7 @@ Installation
     make test
     sudo make install
 
-and add follow line to php.ini
+and add following line to php.ini
 
     extension=ruby.so
 
